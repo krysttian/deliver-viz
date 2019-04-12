@@ -1,0 +1,68 @@
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+}
+
+html{
+    background: black;
+    color: white;
+}
+@media (prefers-color-scheme: light) {
+    html {
+        background: white;
+        color: black;
+    }
+}
+
+  h2 {
+      margin-top: 1em;
+      padding-top: 1em;
+  }
+
+.axis {
+    font: 10px sans-serif;
+  }
+  .sunday {
+      fill: lightblue;
+  }
+  .monday {
+      fill: lightcoral;
+  }
+  .tuesday {
+      fill:violet;
+  }
+  .wednesday{
+      fill: beige;
+  }
+  .thursday{
+    fill: pink;
+  }
+
+  .friday{
+      fill: black;
+  }
+  .saturday{
+      fill: aquamarine
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  .axis text{
+      color: black;
+  }
+
+  .bar-text{
+      color: red;
+  }
+  #chart-svg{
+    padding: 1em;
+    background: #eee;
+    margin: 10px;
+  }

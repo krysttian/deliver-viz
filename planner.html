@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./planner.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Reducer Planner</title>
+</head>
+<body>
+    <h1>Lets see if we can reduce our Carbon</h1>
+    <h2>How to use this</h2>
+    <p>
+        This site allows you to visualize your Order History Report generated from Amazon.com. One way this is useful is to see which days you order the most from Amazon to maximize your Amazon Day Impact by selecting it 2 Days after your most popular day.
+    </p>
+    <ol>
+        <li>
+            Generate and download Order History Report <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=200131240"> which you can see how to do here</a>
+        </li>
+        <li>
+            Comeback to this page and select your file where it says "Browse", next to "Upload your csv"(FILE AND CONTENTS ARE ONLY READ BY YOUR BROWSER AND ARE NOT UPLOADED FAQ#DATA)
+        </li>
+        <li>
+            Review Graph and Suggestions Below
+        </li>
+    </ol>
+    <span>
+        <label for="csvinput">
+            Uplode your csv!
+        </label>
+        <input type="file" id="csvinput">
+        <button id="clearfile">Clear File</button>
+    </span>
+    <div id="chart"></div>
+</body>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="./papaparse.min.js"></script>
+    <script src="./planner.js" defer></script>
+</html>
